@@ -16,6 +16,6 @@ class RegistrationController extends Controller
     {
         User::create($request->getAttributes())->sendEmailVerificationNotification();
 
-        return $this->respondWithMessage('User successfully created');
+        return $this->respondWithMessage('User successfully created ');
     }
 }
